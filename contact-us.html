@@ -7,7 +7,7 @@
         <link
             href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
             rel="stylesheet" />
-        <title>Biznezpro</title>
+        <title>Contact us</title>
     </head>
     <body>
         <main class="dash-wrapper">
@@ -28,7 +28,7 @@
                     <ul>
 
                         <li>
-                            <a href="index.html" class="dash-nav active">
+                            <a href="index.html" class="dash-nav">
                                 <div class="svg-ico">
                                     <i class="ri-home-4-line"></i>
                                 </div>
@@ -36,7 +36,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="industry.html" class="dash-nav">
+                            <a href="#" class="dash-nav">
                                 <div class="svg-ico">
                                     <i class="ri-home-office-line"></i>
                                 </div>
@@ -55,7 +55,7 @@
                         </li>
 
                         <li>
-                            <a href="contact-us.html" class="dash-nav ">
+                            <a href="contact-us.html" class="dash-nav active">
                                 <div class="svg-ico">
                                     <i class="ri-phone-line"></i>
                                 </div>
@@ -97,18 +97,38 @@
 
             <!-- main content area start -->
             <div class="main-content-area">
-                <div class="home-page">
-                    <div class="hero-banner">
-                        <a href="index.html">
-                            <img src="images/site-logo.png" alt="site-logo">
-                        </a>
-                        <h1>Connecting the Global Economy</h1>
-                        <p>Interactive Infographic Digital Intelligence</p>
-                        <div class="search-bar">
-                            <input type="text" class="input-control" placeholder="Search company here">
+                <div class="contact-us">
+                   <div class="contact-form">
+                    <a href="index.html">
+                        <img src="images/site-logo.png" alt="site-logo">
+                    </a>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name <sup>*</sup></label>
+                            <input type="text" id="name" placeholder="Type Here..." class="input-control">
                         </div>
-                    </div>
-                    
+                       
+                        <div class="form-group">
+                            <label for="contact-number">Contact Number <sup>*</sup></label>
+                            <input type="text" id="contact-number" placeholder="Type Here..." class="input-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <sup>*</sup></label>
+                            <input type="text" id="email" placeholder="Type Here..." class="input-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Title <sup>*</sup></label>
+                            <input type="text" id="title" placeholder="Type Here..." class="input-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description <sup>*</sup></label>
+                            <textarea name="description" id="description" placeholder="Type Here..." class="input-control"></textarea>
+                        </div>
+                        <div class="submit-btn">
+                            <button class="primary-btn">Submit</button>
+                        </div>
+                    </form>
+                   </div>
                 </div>
             </div>
         </main>

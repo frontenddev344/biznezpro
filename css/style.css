@@ -135,6 +135,7 @@ p{
     padding: 10px;
     margin-bottom: 10px;
     gap: 15px;
+    height: 70px;
 }
 .dash-wrapper.toggle .logo-holder {
     display: none;
@@ -232,6 +233,12 @@ label {
     padding: 0 15px;
     margin: 0 0 5px;
 }
+label sup {
+    color: red;
+    font-size: 16px;
+    position: relative;
+    top: 5px;
+}
 .input-control {
     width: 100%;
     display: block;
@@ -268,12 +275,47 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
     opacity: 1;
 }
+textarea.input-control {
+    height: 120px;
+    resize: none;
+}
 .search-bar .input-control {
     border: 1px solid #eee;
     border-radius: 30px;
     color: #000;
 }
-
+.primary-btn {
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Poppins';
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: 2px solid var(--theme1);
+    color:var(--theme1);
+    position: relative;
+    overflow: hidden;
+}
+.primary-btn:hover {
+    color: #fff;
+}
+.primary-btn::before {
+    content: "";
+    background: var(--theme1);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+.primary-btn:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+}
 .contact-form {
     min-height: 100vh;
     display: flex;
@@ -282,6 +324,7 @@ input[type="checkbox"]:checked::before {
     justify-content: center;
     max-width: 660px;
     margin: 0 auto;
+    padding: 40px 0;
 }
 .contact-form form {
     width: 100%;
@@ -335,4 +378,7 @@ input[type="checkbox"]:checked::before {
 .contact-form p a {
     color: var(--theme1);
     margin-left: 10px;
+}
+.submit-btn {
+    text-align: center;
 }
