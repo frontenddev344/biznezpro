@@ -96,7 +96,9 @@ p{
 .item {
     width: 100%;
 }
-
+.sub-heading {
+    font-size: 20px;
+}
 .dash-wrapper {
     display: flex;
     width: 100%;
@@ -108,8 +110,6 @@ p{
 .dash-wrapper.toggle {
     padding-inline: 96px 24px;
 }
-
-
 
 .page-sidebar {
     width: 250px;
@@ -417,4 +417,14 @@ textarea.input-control {
     align-items: center;
     max-width: 800px;
     grid-gap: 20px;
+}
+
+/* industry page start  */
+
+.tab-content .nav-link {
+    border: 0;
+    color: #000;
+}
+.tab-content .nav-tabs {
+    border: 0;
 }
