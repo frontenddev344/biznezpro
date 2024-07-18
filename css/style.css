@@ -194,6 +194,7 @@ a.dash-nav.active {
 .copyright p {
     font-size: 14px;
     color: #00000070;
+    margin: 0;
 }
 .dash-wrapper.toggle .copyright {
     display: none;
@@ -203,7 +204,7 @@ a.dash-nav.active {
 .main-content-area {
     width: 100%;
     min-height: 100vh;
-    padding: 0 20px;
+    padding-left: 20px;
 }
 
 
@@ -295,6 +296,7 @@ textarea.input-control {
     color:var(--theme1);
     position: relative;
     overflow: hidden;
+    isolation: isolate;
 }
 .primary-btn:hover {
     color: #fff;
@@ -314,7 +316,7 @@ textarea.input-control {
     z-index: -1;
 }
 .primary-btn:hover::before {
-    transform: translate(-50%, -50%) scale(3);
+    transform: translate(-50%, -50%) scale(30);
 }
 .contact-form {
     min-height: 100vh;
@@ -379,6 +381,40 @@ textarea.input-control {
     color: var(--theme1);
     margin-left: 10px;
 }
+
+.forget-paassword-btn {
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+}
 .submit-btn {
     text-align: center;
+}
+.forget-paassword-modal  button.btn-close {
+    margin-left: auto;
+    display: block;
+}
+.forget-paassword-modal h4 {
+    font-size: 18px;
+    padding: 0 15px;
+    margin: 0 0 30px;
+}
+
+.forget-paassword-modal .primary-btn {
+    margin-inline: auto;
+    display: block;
+    text-align: center;
+    width: fit-content;
+}
+.top-bar {
+    border: 1px solid #F5F5F5;
+    padding: 10px;
+    margin: 20px 0 0;
+}
+.top-bar-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    max-width: 800px;
+    grid-gap: 20px;
 }

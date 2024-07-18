@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-            rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
         <title>Sign in</title>
     </head>
     <body>
@@ -36,7 +36,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="dash-nav">
+                            <a href="industry.html" class="dash-nav">
                                 <div class="svg-ico">
                                     <i class="ri-home-office-line"></i>
                                 </div>
@@ -117,7 +117,9 @@
                                 <label for="checkbox">Remember me</label>
                             </div>
                             <div class="forget-paassword">
-                                <p>Forgot Password?</p>
+                                <button type="button" class="forget-paassword-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Forgot Password?
+                                  </button>
                             </div>
                         </div>
                         <div class="form-group">
@@ -130,12 +132,34 @@
                            <p>Don't have an account?<a href="sign_up.html">Sign Up</a></p>
                               
                         </div>
+                        
                     </form>
                    </div>
                 </div>
             </div>
         </main>
+        <!--forget password modal start -->
+        <div class="modal fade forget-paassword-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4>Forgot your Password?</h4>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Type Here..." class="input-control">
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="primary-btn">Request Password Reset</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!--forget password modal end -->
+
         <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
         <script src="js/custom.js"></script>
     </body>
 </html>
