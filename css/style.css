@@ -655,3 +655,14 @@ ul.mod-list li a:hover {
     color: #57c8ca;
     background: #fff;
 }
+.add-node {
+    padding: 50px 40px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-node img {
+    width: 100%;
+    max-width: 80%;
+}
