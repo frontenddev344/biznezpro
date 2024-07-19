@@ -228,6 +228,14 @@ a.dash-nav.active {
     width: 100%;
     margin: 40px 0 0;
 }
+.search-bar {
+    width: 100%;
+    margin: 40px 0 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    grid-gap: 20px;
+}  
 label {
     display: block;
     font-size: 14px;
@@ -251,6 +259,7 @@ label sup {
 }
 input[type="checkbox"] {
     appearance: none;
+    -webkit-appearance: none;
     background: transparent;
     width: 20px;
     aspect-ratio: 1;
@@ -264,8 +273,8 @@ input[type="checkbox"] {
 input[type="checkbox"]::before {
     content: "";
     position: absolute;
-    left: 6px;
-    top: 1px;
+    left: 7px;
+    top: 3px;
     width: 5px;
     height: 10px;
     border: solid var(--theme1);
@@ -275,6 +284,14 @@ input[type="checkbox"]::before {
 }
 input[type="checkbox"]:checked::before {
     opacity: 1;
+}
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../images/arrow-down.svg);
+    background-position: 95%;
+    background-repeat: no-repeat;
+    background-size: 20px;
 }
 textarea.input-control {
     height: 120px;
@@ -317,6 +334,9 @@ textarea.input-control {
 }
 .primary-btn:hover::before {
     transform: translate(-50%, -50%) scale(30);
+}
+a.logo {
+    margin-bottom: 30px;
 }
 .contact-form {
     min-height: 100vh;
@@ -410,6 +430,7 @@ textarea.input-control {
     border: 1px solid #F5F5F5;
     padding: 10px;
     margin: 20px 0 0;
+    border-radius: 8px;
 }
 .top-bar-wrap {
     display: grid;
@@ -435,7 +456,7 @@ textarea.input-control {
     font-size: 14px;
     border-radius: 40px;
     width: 100%;
-    border: 2px solid var(--theme1);
+    border: 1px solid var(--theme1);
 }
 .tab-content-main .nav-link.active {
     background: var(--theme1);
@@ -444,7 +465,7 @@ textarea.input-control {
 }
 .tab-content {
     padding: 20px;
-    border: 2px solid var(--theme1);
+    border: 1px solid #F5F5F5;
     border-radius: 15px;
     height: 100%;
 }
