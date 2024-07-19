@@ -490,7 +490,7 @@ a.btn {
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease-in-out;
-    max-width: 150px;
+    max-width: 160px;
     width: 100%;
     background: #57c8ca;
     color: #fff;
@@ -509,6 +509,7 @@ a.btn:hover {
     background: #ebebeb38;
     padding: 20px;
     border-radius: 8px;
+    justify-content: space-between;
 }
 .process-main img {
     width: 100%;
@@ -627,4 +628,30 @@ a#Log-tab {
 }
 .result-banner img {
     width: 100%;
+}
+ul.mod-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #F5F5F5;
+}
+ul.mod-list li span {
+    padding-right: 15px;
+}
+ul.mod-list li a {
+    border: 1px solid #57c8ca;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    background: #57c8ca;
+    color: #fff;
+}
+ul.mod-list li a:hover {
+    color: #57c8ca;
+    background: #fff;
 }
