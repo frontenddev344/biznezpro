@@ -40,4 +40,8 @@
     .page-sidebar.open {
         transform: translateX(0);
     }
+    .hero-banner h1 {
+        font-size: 32px;
+        max-width: 360px;
+    }
 }

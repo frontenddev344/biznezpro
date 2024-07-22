@@ -222,9 +222,11 @@ a.dash-nav.active {
 .hero-banner h1 {
     font-size: 40px;
     margin: 0 0 10px;
+    text-align: center;
 }
 .hero-banner p {
     font-size: 18px;
+    text-align: center;
 }
 .search-bar {
     width: 100%;
