@@ -1,7 +1,43 @@
+@media screen and (max-width:768px){
+    .top-bar-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media screen and (max-width:575px) {
     span.menu-toggle {
         position: absolute;
         right: -30px;
         top: 20px;
+    }
+    .dash-wrapper.toggle .logo-holder {
+        display: block;
+    }
+    .dash-wrapper.toggle .tooltion-title {
+        display: block;
+    }
+    .dash-wrapper.toggle .copyright {
+        display: block;
+    }
+    .dash-wrapper.toggle .page-sidebar {
+        width: 250px;
+    }
+    .dash-wrapper.toggle a.dash-nav {
+        padding: 5px 15px;
+    }
+    .dash-wrapper.toggle {
+        padding-inline: 15px;
+    }
+    .dash-wrapper {
+        padding-inline: 15px;
+    }
+    .main-content-area {
+        padding-left: 0;
+        padding-top: 45px;
+    }
+    .page-sidebar {
+        transform: translateX(-100%);
+    }
+    .page-sidebar.open {
+        transform: translateX(0);
     }
 }
