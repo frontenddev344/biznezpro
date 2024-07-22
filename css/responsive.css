@@ -1,0 +1,7 @@
+@media screen and (max-width:575px) {
+    span.menu-toggle {
+        position: absolute;
+        right: -30px;
+        top: 20px;
+    }
+}

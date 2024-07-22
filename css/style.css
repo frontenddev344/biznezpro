@@ -571,6 +571,7 @@ a#Log-tab {
 }
 .dash-menu ul {
     overflow: auto;
+    scrollbar-width: none;
 }
 /* width */
 ::-webkit-scrollbar {
