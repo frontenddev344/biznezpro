@@ -318,6 +318,7 @@ textarea.input-control {
     position: relative;
     overflow: hidden;
     isolation: isolate;
+    text-transform: capitalize;
 }
 .primary-btn:hover {
     color: #fff;
@@ -690,4 +691,35 @@ ul.mod-list li a:hover {
 .dlt-btn:hover{
     background: transparent;
     color: var(--theme1);
+}
+nav.node-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+nav.node-nav li {
+    position: relative;
+}
+nav.node-nav li a {
+    padding: 5px 20px;
+    border: 1px solid #F5F5F5;
+    font-size: 14px;
+    border-radius: 40px;
+    text-transform: capitalize;
+    display: block;
+}
+ul.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 130px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s linear;
+    width: 160px;
+}
+nav.node-nav li:hover ul.dropdown {
+    opacity: 1;
+    visibility: visible;
 }
