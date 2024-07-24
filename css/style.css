@@ -244,6 +244,7 @@ label {
     font-size: 14px;
     padding: 0 15px;
     margin: 0 0 5px;
+    text-align: left;
 }
 label sup {
     color: red;
@@ -706,8 +707,10 @@ ul.mod-list li a:hover {
     min-height: 500px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 60px;
+    max-width: 1060px;
+    margin: 0 auto;
 }
 .node-child {
     position: relative;
@@ -715,7 +718,7 @@ ul.mod-list li a:hover {
 .add-node-btns {
     position: absolute;
     top: 0;
-    right: 0;
+    right:0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -818,6 +821,17 @@ nav.node-nav li:hover ul.dropdown {
     display: inline-block;
     position: absolute;
     top: 50%;
-    right: -40px;
-    transform: translateY(-50%);
+    right: 0;
+    transform: translate(100%, -50%);
+    width: 80px;
+}
+.direction-icon img {
+    transform: rotate(-25deg);
+    margin-left: 20px;
+}
+.addNode .modal-body > .grid {
+    grid-gap: 15px;
+}
+.addNode .modal-body input {
+    height: 47px;
 }

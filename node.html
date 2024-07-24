@@ -124,7 +124,7 @@
                         </div>
                         <img src="images/add-node-img-1.png" alt="add-node-img-1">
                         <span class="direction-icon">
-                            <img src="images/arrow_right.svg" alt="arrow_right">
+                            <img src="images/curved-arrow.png" alt="curved-arrow">
                         </span>
                        </div>
                        <div class="node-child">
@@ -133,7 +133,7 @@
                         </div>
                         <img src="images/add-node-img-2.png" alt="add-node-img-2">
                         <span class="direction-icon">
-                            <img src="images/arrow_right.svg" alt="arrow_right">
+                            <img src="images/curved-arrow.png" alt="curved-arrow">
                         </span>
                        </div>
                        <div class="node-child">
@@ -154,8 +154,21 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <button>add img</button>
-                  <button>add text</button>
+                    <div class="grid grid-cols-2">
+                        <div class="item">
+                            <div class="form-group">
+                                <label for="image">Add Image</label>
+                                <input type="file" name="image" id="image" class="input-control">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label for="addtext">Add Text</label>
+                            <input type="text" id="addtext" class="input-control" placeholder="Type Here...">
+                        </div>
+                    </div>
+                    <div class="submit-addons">
+                        <button type="submit">Submit</button>
+                    </div>
                 </div>
               </div>
             </div>
