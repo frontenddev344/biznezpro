@@ -707,7 +707,7 @@ ul.mod-list li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
 }
 .node-child {
     position: relative;
@@ -811,4 +811,13 @@ nav.node-nav li:hover ul.dropdown {
 .addNode .modal-header {
     border: 0;
     padding-bottom: 0;
+}
+
+.direction-icon {
+    color: #57c8ca;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
 }
