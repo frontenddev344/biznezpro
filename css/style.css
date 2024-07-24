@@ -305,6 +305,15 @@ textarea.input-control {
     border-radius: 30px;
     color: #000;
 }
+button {
+    background: var(--theme1);
+    border: 1px solid var(--theme1);
+    padding: 4px 16px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 40px;
+}
 .primary-btn {
     display: inline-block;
     font-size: 14px;
@@ -698,21 +707,28 @@ ul.mod-list li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 .node-child {
     position: relative;
 }
 .add-node-btns {
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     background: var(--theme1);
     transition: all 0.2s ease-in-out;
     opacity: 0;
     transform: scale(0);
+    color: #fff;
+    width: 30px;
+    aspect-ratio: 1;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .node-child:hover .add-node-btns {
     opacity: 1;
@@ -774,7 +790,7 @@ nav.node-nav li a {
     background: var(--theme1);
     color: #fff;
 }
-ul.dropdown {
+/* ul.dropdown {
     position: absolute;
     top: 100%;
     left: 0;
@@ -783,9 +799,16 @@ ul.dropdown {
     opacity: 0;
     transition: all 0.2s linear;
     width: 160px;
-}
+} */
 nav.node-nav li:hover ul.dropdown {
     opacity: 1;
     visibility: visible;
 }
-
+.addNode .modal-body {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.addNode .modal-header {
+    border: 0;
+    padding-bottom: 0;
+}

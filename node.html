@@ -110,7 +110,7 @@
                         <nav class="node-nav">
                             <ul>
                                 <li>
-                                    <a href="#">add node</a>
+                                    <a href="#">add node <i class="ri-add-large-line"></i></a>
                                    
                                 </li>
                             </ul>
@@ -119,37 +119,42 @@
                     </div>
                     <div class="add-node">
                        <div class="node-child">
-                        <ul class="add-node-btns">
-                            <li><span><i class="ri-file-image-line"></i></span></li>
-                            <li><span><i class="ri-file-text-line"></i></span></li>
-                        </ul>
+                        <div class="add-node-btns" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <i class="ri-edit-box-line"></i>
+                        </div>
                         <img src="images/add-node-img-1.png" alt="add-node-img-1">
                        </div>
                        <div class="node-child">
-                        <ul class="add-node-btns">
-                            <li><span><i class="ri-file-image-line"></i></span></li>
-                            <li><span><i class="ri-file-text-line"></i></span></li>
-                        </ul>
+                        <div class="add-node-btns" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <i class="ri-edit-box-line"></i>
+                        </div>
                         <img src="images/add-node-img-2.png" alt="add-node-img-2">
                        </div>
                        <div class="node-child">
-                        <ul class="add-node-btns">
-                            <li><span><i class="ri-file-image-line"></i></span></li>
-                            <li><span><i class="ri-file-text-line"></i></span></li>
-                        </ul>
+                        <div class="add-node-btns" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <i class="ri-edit-box-line"></i>
+                        </div>
                         <img src="images/add-node-img-3.png" alt="add-node-img-3">
-                       </div>
-                       <div class="node-child">
-                        <ul class="add-node-btns">
-                            <li><span><i class="ri-file-image-line"></i></span></li>
-                            <li><span><i class="ri-file-text-line"></i></span></li>
-                        </ul>
-                        <img src="images/add-node-img-4.png" alt="add-node-img-4">
                        </div>
                     </div>
                 </div>
             </div>
         </main>
+        <!-- add node popup start  -->
+        <div class="modal fade addNode" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <button>add img</button>
+                  <button>add text</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- add node popup end  -->
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/custom.js"></script>
