@@ -826,7 +826,6 @@ nav.node-nav li:hover ul.dropdown {
     width: 80px;
 }
 .direction-icon img {
-    transform: rotate(-25deg);
     margin-left: 20px;
 }
 .addNode .modal-body > .grid {
