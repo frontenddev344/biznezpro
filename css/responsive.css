@@ -84,4 +84,28 @@
     .tab-content-main {
         padding: 20px 0;
     }
+    .dash-wrapper.toggle  .doc-pages .svg-ico {
+        display: none;
+    }
+    .dash-wrapper.toggle .sign_out  .sign-out-details {
+        padding: 5px 15px;
+        border: 1px solid #f5f5f5;
+        flex-direction: row;
+    }
+    .dash-wrapper.toggle .sign_out .sign-out-details a.sign_out-icon {
+        padding:0 0 0 15px;
+    }
+    .dash-wrapper.toggle .sign_out .sign-out-details a.sign_out-icon::before{
+        opacity: 1;
+    }
+    .dash-wrapper.toggle .sign_out .sign-out-details .profile-details {
+        display:block;
+    }
+    .dash-wrapper.toggle .sign_out .sign-out-details a.dash-nav {
+        width: auto;
+        padding: 0;
+    }
+    .dash-wrapper.toggle .doc-pages a.dash-nav {
+        padding: 5px 10px;
+    }
 }

@@ -200,7 +200,96 @@ a.dash-nav.active {
 .dash-wrapper.toggle .copyright {
     display: none;
 }
+.doc-pages {
+    margin-top: 40px;
+}
+.doc-pages ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.doc-pages ul a.dash-nav {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.doc-pages ul a.dash-nav .svg-ico {
+    display: none;
+}
+.doc-pages ul a.dash-nav .tooltion-title {
+    margin: 0;
+}
+.dash-wrapper.toggle  .doc-pages .svg-ico {
+    display: block;
+}
+.sign_out {
+    margin-top: auto;
+    border: 2px solid #F5F5F5;
+    border-width: 1px 0;
+    padding: 10px 0;
+}
 
+.sign-out-details {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F5F5F5;
+    border-radius: 40px;
+    padding: 5px 15px;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.profile-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #00000070;
+}
+.sign-out-details a.dash-nav {
+    justify-content: space-between;
+    width: 140px;
+    gap: 10px;
+    padding: 0;
+}
+.sign-out-details a.dash-nav:hover {
+    background: transparent;
+}
+.sign-out-details a i {
+    color: #00000070;
+}
+.profile-details span {
+    color: var(--theme1);
+}
+a.sign_out-icon {
+    position: relative;
+    padding-left: 15px;
+}
+a.sign_out-icon::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    background: var(--theme1);
+    transform: translateY(-50%);
+}
+
+.dash-wrapper.toggle .sign_out  .sign-out-details {
+    padding: 0;
+    border: 0;
+    flex-direction: column;
+}
+.dash-wrapper.toggle .sign_out .sign-out-details a.dash-nav {
+    width: auto;
+}
+.dash-wrapper.toggle .sign_out .sign-out-details a.sign_out-icon {
+    padding: 15px 0 0;
+}
+.dash-wrapper.toggle .sign_out .sign-out-details a.sign_out-icon::before {
+    opacity: 0;
+}
+.dash-wrapper.toggle .sign_out .sign-out-details .profile-details {
+    display: none;
+}
 /* main-content-area start  */
 .main-content-area {
     width: 100%;
