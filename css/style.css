@@ -882,6 +882,9 @@ nav.node-nav li a {
     background: var(--theme1);
     color: #fff;
 }
+
+
+
 /* ul.dropdown {
     position: absolute;
     top: 100%;
@@ -904,7 +907,33 @@ nav.node-nav li:hover ul.dropdown {
     border: 0;
     padding-bottom: 0;
 }
-
+.node-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:start;
+    gap: 15px;
+}
+nav.node-nav li label {
+    padding: 5px 20px;
+    border: 1px solid #F5F5F5;
+    font-size: 14px;
+    border-radius: 40px;
+    text-transform: capitalize;
+    display: block;
+    background: var(--theme1);
+    color: #fff;
+}
+nav.node-nav input#company-logo {
+    display: none;
+}
+nav.node-nav input#company-name {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
 .direction-icon {
     color: #57c8ca;
     display: inline-block;

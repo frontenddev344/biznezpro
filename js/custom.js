@@ -24,3 +24,8 @@ else{
 }
 });
 
+$(document).ready(function(){
+    $(".company-name").click(function(){
+        $(this).next().slideToggle();
+    });
+});
